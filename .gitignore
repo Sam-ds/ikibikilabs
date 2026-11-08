@@ -1,0 +1,14 @@
+# Local preview artefacts
+.preview/
+.appshots/
+.check/
+node_modules/
+*.log
+*.zip
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

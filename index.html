@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helpful Pets — a digital wellness companion by Ikibiki Labs</title>
+  <meta name="description" content="Helpful Pets turns your screen-time goals into a living companion. A calmer phone, a happier buddy. Currently in build by Ikibiki Labs — Android beta in testing." />
+  <meta name="theme-color" content="#171331" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://ikibikilabs.space/" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ikibiki Labs" />
+  <meta property="og:title" content="Helpful Pets — a digital wellness companion" />
+  <meta property="og:description" content="Turn your screen-time goals into a living companion. A calmer phone, a happier buddy. Coming soon from Ikibiki Labs." />
+  <meta property="og:url" content="https://ikibikilabs.space/" />
+  <meta property="og:image" content="https://ikibikilabs.space/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Helpful Pets — a digital wellness companion" />
+  <meta name="twitter:description" content="A calmer phone, a happier buddy. A digital wellness companion by Ikibiki Labs — in build." />
+  <meta name="twitter:image" content="https://ikibikilabs.space/og-image.png" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <noscript><style>.preloader { display: none !important; }</style></noscript>
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Helpful Pets",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "Android",
+    "description": "A digital wellness companion that turns screen-time goals into a living pet.",
+    "url": "https://ikibikilabs.space/",
+    "publisher": { "@type": "Organization", "name": "Ikibiki Labs", "url": "https://ikibikilabs.space/" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ================= PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <div class="preloader__paw">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="7" cy="8" rx="1.9" ry="2.5"/><ellipse cx="12" cy="6.6" rx="1.9" ry="2.6"/><ellipse cx="17" cy="8" rx="1.9" ry="2.5"/><path d="M12 11.2c2.9 0 5 2.2 5 4.4 0 1.7-1.3 3-3 3-.9 0-1.5-.3-2-.6-.5.3-1.1.6-2 .6-1.7 0-3-1.3-3-3 0-2.2 2.1-4.4 5-4.4Z"/></svg>
+      </div>
+      <img class="preloader__wordmark" src="assets/img/logo-helpful-pets.png" alt="" />
+      <div class="preloader__bar"><span></span></div>
+      <p class="preloader__meta">Waking up your buddy · Ikibiki Labs</p>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Ikibiki Labs — home">
+        <img src="assets/img/logo-ikibiki-labs.png" alt="Ikibiki Labs" />
+      </a>
+      <span class="nav__divider" aria-hidden="true"></span>
+      <span class="product-label"><i class="status-dot"></i>Helpful Pets <em>in build</em></span>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#idea">The idea</a>
+        <a href="#app">The app</a>
+        <a href="#buddies">Buddies</a>
+        <a href="#progress">Progress</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="burger" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE MENU ================= -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <a href="#idea"><span>01</span>The idea</a>
+      <a href="#app"><span>02</span>The app</a>
+      <a href="#buddies"><span>03</span>Buddies</a>
+      <a href="#progress"><span>04</span>Progress</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <span class="build-pill"><i></i>Build in progress</span>
+      <a class="mobile-menu__mail" href="mailto:hello@ikibikilabs.space">hello@ikibikilabs.space</a>
+      <span class="mobile-menu__meta">IKIBIKI LABS · EARTH · 2026</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="hero__sky" aria-hidden="true">
+        <div class="moon"></div>
+        <div class="cloud cloud--a"></div>
+        <div class="cloud cloud--b"></div>
+        <div class="aurora aurora--violet"></div>
+        <div class="aurora aurora--mint"></div>
+        <span class="star" style="--x:8%;--y:18%;--s:2px;--d:0s"></span>
+        <span class="star" style="--x:16%;--y:64%;--s:1.5px;--d:1.2s"></span>
+        <span class="star" style="--x:26%;--y:11%;--s:2.5px;--d:2.1s"></span>
+        <span class="star" style="--x:34%;--y:38%;--s:1.5px;--d:.6s"></span>
+        <span class="star" style="--x:45%;--y:8%;--s:2px;--d:3.1s"></span>
+        <span class="star" style="--x:53%;--y:28%;--s:1.5px;--d:1.7s"></span>
+        <span class="star" style="--x:62%;--y:12%;--s:2px;--d:.3s"></span>
+        <span class="star" style="--x:71%;--y:52%;--s:1.5px;--d:2.6s"></span>
+        <span class="star" style="--x:79%;--y:22%;--s:2.5px;--d:1.4s"></span>
+        <span class="star" style="--x:88%;--y:70%;--s:2px;--d:.9s"></span>
+        <span class="star" style="--x:92%;--y:35%;--s:1.5px;--d:3.6s"></span>
+        <span class="star" style="--x:6%;--y:80%;--s:2px;--d:2.2s"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <div class="product-lockup" data-reveal>
+            <span class="paw-badge">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="7" cy="8" rx="1.9" ry="2.5"/><ellipse cx="12" cy="6.6" rx="1.9" ry="2.6"/><ellipse cx="17" cy="8" rx="1.9" ry="2.5"/><path d="M12 11.2c2.9 0 5 2.2 5 4.4 0 1.7-1.3 3-3 3-.9 0-1.5-.3-2-.6-.5.3-1.1.6-2 .6-1.7 0-3-1.3-3-3 0-2.2 2.1-4.4 5-4.4Z"/></svg>
+            </span>
+            <div>
+              <img class="product-wordmark" src="assets/img/logo-helpful-pets.png" alt="Helpful Pets" />
+              <span class="product-byline">A digital wellness companion by Ikibiki Labs</span>
+            </div>
+          </div>
+
+          <h1 data-reveal style="--d:.05s">
+            A calmer phone.<br />
+            <span class="grad">A happier little buddy.</span>
+          </h1>
+
+          <p class="hero__lede" data-reveal style="--d:.1s">
+            Helpful Pets turns your screen-time goals into a living companion.
+            Stay close to your limits and they purr. Drift too far and they fade.
+            A gentle nudge back to real life — not another app that makes you feel bad.
+          </p>
+
+          <div class="build-status" data-reveal style="--d:.16s">
+            <div class="build-status__top">
+              <span class="build-pill"><i></i>Build in progress</span>
+              <span class="build-status__phase">Android beta · in testing</span>
+            </div>
+            <div class="build-bar" aria-hidden="true"><span></span></div>
+            <div class="build-steps" aria-hidden="true">
+              <span class="is-done">Core app</span>
+              <span class="is-done">Beta build</span>
+              <span class="is-current">Device testing</span>
+              <span>Play Store</span>
+            </div>
+            <p class="build-status__note">Updated 8 Nov 2026 · once the beta feels stable, the Play Store release is next.</p>
+          </div>
+
+          <div class="hero__cta" data-reveal style="--d:.22s">
+            <a class="btn btn--primary" href="#app">
+              See the live app
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#buddies">
+              Meet the buddies
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v13M5 12l7 7 7-7"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero__meta" data-reveal style="--d:.28s">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="3"/><path d="M8 10V8a4 4 0 0 1 8 0v2"/></svg>On-device &amp; private</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M10.5 18h3"/></svg>Android first</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.6 12 20 12 20Z"/></svg>Free to start</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" data-reveal style="--d:.12s">
+          <div class="phone phone--hero">
+            <div class="phone__screen">
+              <img src="assets/img/screen-home.jpg" width="712" height="1600" alt="Helpful Pets home screen showing a happy cat, low screen time and a completed habit" />
+            </div>
+            <span class="phone__island" aria-hidden="true"></span>
+            <span class="phone__shine" aria-hidden="true"></span>
+          </div>
+
+          <div class="float-card float-card--biscuit">
+            <span class="coin" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.4c1.5 0 2.6 1.2 2.6 2.4 0 1-.8 1.8-1.7 1.8-.4 0-.6-.2-.9-.3-.3.1-.5.3-.9.3-.9 0-1.7-.8-1.7-1.8 0-1.2 1.1-2.4 2.6-2.4Z"/></svg>
+            </span>
+            <span class="float-card__text"><strong>+25 biscuits</strong><small>for a calm day</small></span>
+          </div>
+
+          <div class="float-card float-card--limit">
+            <span class="mini-ring" aria-hidden="true"><b>1%</b></span>
+            <span class="float-card__text"><strong>1m</strong><small>of a 2h budget</small></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero__strip" data-reveal style="--d:.32s">
+          <div class="strip-item">
+            <span class="strip-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14c3.2 0 4.4-6 8-6s4.8 6 8 6"/><path d="M4 18c3.2 0 4.4-4 8-4s4.8 4 8 4"/></svg></span>
+            <span><strong>Mood engine</strong><small>Your habits, reflected back.</small></span>
+          </div>
+          <div class="strip-item">
+            <span class="strip-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2"/></svg></span>
+            <span><strong>Focus sessions</strong><small>Your buddy naps while you work.</small></span>
+          </div>
+          <div class="strip-item">
+            <span class="strip-item__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 12h8M12 8v8"/><circle cx="12" cy="12" r="9"/></svg></span>
+            <span><strong>Biscuits, not guilt</strong><small>Small rewards for real rest.</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= THE IDEA ================= -->
+    <section class="section" id="idea">
+      <div class="container">
+        <div class="idea">
+          <div class="idea__intro">
+            <p class="eyebrow" data-reveal>Why we're building this</p>
+            <h2 data-reveal style="--d:.06s">The best wellness app is the one you don't have to fight.</h2>
+            <p class="idea__lede" data-reveal style="--d:.12s">
+              Most screen-time apps count your minutes and hand out guilt.
+              We wanted the opposite: something warm enough that protecting
+              your time feels like caring for someone.
+            </p>
+
+            <div class="mood-card" data-reveal style="--d:.18s">
+              <img src="assets/img/mood-cat.jpg" alt="A happy illustrated kitten cheering you on" />
+              <div class="mood-card__caption">
+                <span>A happy buddy is the whole point.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="principle-list">
+            <article class="principle" data-reveal>
+              <span class="principle__num">01</span>
+              <div>
+                <h3>A face, not a number</h3>
+                <p>Your buddy's mood is the dashboard. Under your limit, they're happy. Ignore them and they fade — no charts required.</p>
+              </div>
+              <span class="principle__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-9.4A4.1 4.1 0 0 1 12 7a4.1 4.1 0 0 1 7 3.6C19 15.6 12 20 12 20Z"/></svg></span>
+            </article>
+
+            <article class="principle" data-reveal style="--d:.06s">
+              <span class="principle__num">02</span>
+              <div>
+                <h3>Rewards, not restrictions</h3>
+                <p>Focus sessions, calm days, and phone-free hours earn biscuits. Spend them on your pet — not on more screen time.</p>
+              </div>
+              <span class="principle__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M8.5 9.5h5.2a2.2 2.2 0 0 1 0 4.4H9.8a2.2 2.2 0 0 0 0 4.4h5.7"/></svg></span>
+            </article>
+
+            <article class="principle" data-reveal style="--d:.12s">
+              <span class="principle__num">03</span>
+              <div>
+                <h3>Private by default</h3>
+                <p>Everything stays on your phone. No account, no cloud sync, no ads. Your screen time is nobody else's business.</p>
+              </div>
+              <span class="principle__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="3"/><path d="M8 10V8a4 4 0 0 1 8 0v2"/></svg></span>
+            </article>
+
+            <article class="principle principle--mint" data-reveal style="--d:.18s">
+              <span class="principle__num">04</span>
+              <div>
+                <h3>Small enough to keep</h3>
+                <p>No 40-screen onboarding, no subscription maze. One pet, one budget, one calm corner of your phone.</p>
+              </div>
+              <span class="principle__icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LIVE APP ================= -->
+    <section class="section section--app" id="app">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>The live app</p>
+            <h2 data-reveal style="--d:.06s">Real screens.<br />Real build.</h2>
+          </div>
+          <p class="section-head__lede" data-reveal style="--d:.12s">
+            These aren't concept boards. They're captures from the current beta
+            build on a real device. A few rough edges are still visible — that's
+            what “in progress” looks like.
+          </p>
+        </div>
+
+        <div class="screens-wrap" data-reveal>
+          <div class="screens-scroll" id="screensScroll">
+            <figure class="screen-card">
+              <div class="screen-card__frame">
+                <img src="assets/img/screen-home.jpg" width="712" height="1600" loading="lazy" alt="Helpful Pets home screen with a happy cat, screen time and a habit tracker" />
+                <span class="screen-card__shade" aria-hidden="true"></span>
+              </div>
+              <figcaption>
+                <span class="screen-card__index">01 / HOME</span>
+                <strong>Mood, budget, biscuits — at a glance.</strong>
+                <span>One look tells you how your day is going.</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screen-card">
+              <div class="screen-card__frame">
+                <img src="assets/img/screen-focus.jpg" width="712" height="1600" loading="lazy" alt="Helpful Pets focus session screen with a timer ring and the cat resting nearby" />
+                <span class="screen-card__shade" aria-hidden="true"></span>
+              </div>
+              <figcaption>
+                <span class="screen-card__index">02 / FOCUS</span>
+                <strong>Your buddy naps while you work.</strong>
+                <span>15 to 60 minutes. Earn biscuits for stepping away.</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screen-card">
+              <div class="screen-card__frame">
+                <img src="assets/img/screen-insights.jpg" width="712" height="1600" loading="lazy" alt="Helpful Pets insights screen showing the week view and screen-time summary" />
+                <span class="screen-card__shade" aria-hidden="true"></span>
+              </div>
+              <figcaption>
+                <span class="screen-card__index">03 / INSIGHTS</span>
+                <strong>A week in presence, not pixels.</strong>
+                <span>Gentle patterns, streaks and focus totals.</span>
+              </figcaption>
+            </figure>
+
+            <figure class="screen-card">
+              <div class="screen-card__frame">
+                <img src="assets/img/screen-habits.jpg" width="712" height="1600" loading="lazy" alt="Helpful Pets habit tracker with a completed daily habit" />
+                <span class="screen-card__shade" aria-hidden="true"></span>
+              </div>
+              <figcaption>
+                <span class="screen-card__index">04 / HABITS</span>
+                <strong>Tiny repeats that add up.</strong>
+                <span>Small loops that make the rest of the day easier.</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="screens-foot" data-reveal>
+          <span class="screens-hint"><i></i>Swipe or scroll the row</span>
+          <span class="screens-captured">Captured on Android · November 2026</span>
+        </div>
+
+        <div class="care-head" data-reveal>
+          <div>
+            <p class="eyebrow">Care, built in</p>
+            <h3>More than a timer.</h3>
+          </div>
+          <p>Gentle reminders, hydration, and a voice for every mood — all on-device, all in the same calm world.</p>
+        </div>
+
+        <div class="screens-grid" id="careScroll" data-reveal>
+          <figure class="screen-card">
+            <div class="screen-card__frame">
+              <img src="assets/img/screen-voice.jpg" width="712" height="1600" loading="lazy" alt="Helpful Pets pet voice settings screen with the option to record a clip for each mood" />
+              <span class="screen-card__shade" aria-hidden="true"></span>
+            </div>
+            <figcaption>
+              <span class="screen-card__index">05 / PET VOICE</span>
+              <strong>A little voice, only when you ask.</strong>
+              <span>On-device speech, plus optional five-second recordings.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="screen-card">
+            <div class="screen-card__frame">
+              <img src="assets/img/screen-reminders.jpg" width="712" height="1600" loading="lazy" alt="Helpful Pets reminders screen with a water reminder scheduled" />
+              <span class="screen-card__shade" aria-hidden="true"></span>
+            </div>
+            <figcaption>
+              <span class="screen-card__index">06 / REMINDERS</span>
+              <strong>Water, tablets, or anything else.</strong>
+              <span>Gentle nudges scheduled on your phone. No cloud.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="screen-card">
+            <div class="screen-card__frame">
+              <img src="assets/img/screen-water.jpg" width="712" height="1600" loading="lazy" alt="Helpful Pets water reminder screen with a daily hydration schedule" />
+              <span class="screen-card__shade" aria-hidden="true"></span>
+            </div>
+            <figcaption>
+              <span class="screen-card__index">07 / HYDRATION</span>
+              <strong>Hydration that fits your day.</strong>
+              <span>A sip schedule based on your weight and awake window.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NAP MODE ================= -->
+    <section class="section section--nap" id="nap">
+      <div class="container">
+        <div class="nap-card" data-reveal>
+          <div class="nap-card__copy">
+            <p class="eyebrow">Nap mode</p>
+            <h2>While you focus,<br />they rest.</h2>
+            <p>
+              Every focus session is a little holiday for your buddy. Start a
+              timer, put the phone down, and come back to a calmer you — and a
+              biscuit or two.
+            </p>
+            <div class="nap-card__pills">
+              <span>15–60 min</span>
+              <span>Strict mode</span>
+              <span>Biscuits earned</span>
+            </div>
+          </div>
+          <div class="nap-card__art">
+            <img
+              src="assets/img/pets-napping.jpg"
+              width="1400"
+              height="700"
+              loading="lazy"
+              alt="Four sleepy Helpful Pets buddies — cat, dog, monkey and tiger — resting on purple pillows"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BUDDIES ================= -->
+    <section class="section" id="buddies">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Choose your buddy</p>
+            <h2 data-reveal style="--d:.06s">Four companions.<br />One calmer phone.</h2>
+          </div>
+          <p class="section-head__lede" data-reveal style="--d:.12s">
+            Four companions for now — cat, dog, monkey, or tiger. Name them,
+            set your limits, and they'll meet you there every day. More can join
+            later with calm days.
+          </p>
+        </div>
+
+        <div class="buddies" data-reveal>
+          <div class="buddies__scroll" id="petScroll" tabindex="0" aria-label="Scrollable buddy selection">
+            <article class="buddy-card" data-buddy="Cat">
+              <div class="buddy-card__art"><img src="assets/img/pet-cat.jpg" alt="A little orange cat sitting on a mossy stone" /></div>
+              <div class="buddy-card__body">
+                <span class="buddy-card__tag">The purr-fector</span>
+                <h3>Cat</h3>
+                <p>The cozy productivity purr-fector.</p>
+              </div>
+            </article>
+
+            <article class="buddy-card" data-buddy="Dog">
+              <div class="buddy-card__art"><img src="assets/img/pet-dog.jpg" alt="A golden puppy sitting on a mossy stone" /></div>
+              <div class="buddy-card__body">
+                <span class="buddy-card__tag">The focus-side kick</span>
+                <h3>Dog</h3>
+                <p>Your loyal focus-side kick.</p>
+              </div>
+            </article>
+
+            <article class="buddy-card" data-buddy="Monkey">
+              <div class="buddy-card__art"><img src="assets/img/pet-monkey.jpg" alt="A little monkey sitting on a mossy stone" /></div>
+              <div class="buddy-card__body">
+                <span class="buddy-card__tag">The cheeky nudge</span>
+                <h3>Monkey</h3>
+                <p>A cheeky nudge to swing back.</p>
+              </div>
+            </article>
+
+            <article class="buddy-card" data-buddy="Tiger">
+              <div class="buddy-card__art"><img src="assets/img/pet-tiger.jpg" alt="A little tiger standing on a mossy stone" /></div>
+              <div class="buddy-card__body">
+                <span class="buddy-card__tag">The gentle heavyweight</span>
+                <h3>Tiger</h3>
+                <p>Bold energy, gentle paws.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="buddies__foot">
+            <p class="buddies__note">Swipe the row to meet them all. Your first buddy is free; more can join later with calm days.</p>
+            <div class="buddies__controls">
+              <button class="round-btn" id="petPrev" type="button" aria-label="Previous buddy" aria-controls="petScroll">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H6M12 5l-7 7 7 7"/></svg>
+              </button>
+              <div class="buddies__dots" id="petDots" aria-hidden="true"></div>
+              <button class="round-btn" id="petNext" type="button" aria-label="Next buddy" aria-controls="petScroll">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROGRESS ================= -->
+    <section class="section" id="progress">
+      <div class="container">
+        <div class="progress-panel" data-reveal>
+          <div class="progress-panel__intro">
+            <p class="eyebrow">Build in progress</p>
+            <h2>Where we're at.</h2>
+            <p>
+              Past the concept stage. The core app is built, the beta is in
+              device testing, and the Play Store release is next. We'll keep
+              this page honest as it moves.
+            </p>
+            <div class="progress-meta">
+              <span class="build-pill"><i></i>Active build</span>
+              <span>Last updated · 8 Nov 2026</span>
+            </div>
+            <ul class="chips" aria-label="Features already in the beta">
+              <li>Screen-time moods</li><li>Focus sessions</li><li>Biscuits</li>
+              <li>Habits</li><li>Insights</li><li>Reminders</li><li>Widgets</li>
+            </ul>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline__item is-done">
+              <span class="timeline__dot"></span>
+              <div class="timeline__body">
+                <span class="timeline__status">Done</span>
+                <h3>Core experience</h3>
+                <p>Mood engine, focus sessions, biscuits, habits, insights and reminders — all working together.</p>
+              </div>
+            </li>
+            <li class="timeline__item is-done">
+              <span class="timeline__dot"></span>
+              <div class="timeline__body">
+                <span class="timeline__status">Built</span>
+                <h3>Android beta</h3>
+                <p>Installable beta build with widgets, on-device voice and no cloud dependency.</p>
+              </div>
+            </li>
+            <li class="timeline__item is-current">
+              <span class="timeline__dot"></span>
+              <div class="timeline__body">
+                <span class="timeline__status">In progress</span>
+                <h3>Device testing &amp; polish</h3>
+                <p>Real phones, real routines, edge cases and accessibility. This is the slow, careful part.</p>
+              </div>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div class="timeline__body">
+                <span class="timeline__status">Next</span>
+                <h3>Play Store release</h3>
+                <p>Store listing, privacy declarations, final QA — then Helpful Pets is out in the world.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section></main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <img class="footer__product" src="assets/img/logo-helpful-pets.png" alt="Helpful Pets" />
+        <p>A digital wellness companion by <strong>Ikibiki Labs</strong>.<br />Built for calmer phones and happier humans.</p>
+        <span class="build-pill"><i></i>Build in progress</span>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <span>Explore</span>
+          <a href="#idea">The idea</a>
+          <a href="#app">The live app</a>
+          <a href="#buddies">Buddies</a>
+          <a href="#progress">Progress</a>
+        </div>
+        <div class="footer__col">
+          <span>Say hello</span>
+          <a href="mailto:hello@ikibikilabs.space">hello@ikibikilabs.space</a>
+        </div>
+        <div class="footer__col">
+          <span>The lab</span>
+          <a href="https://ikibikilabs.space" rel="noopener">ikibikilabs.space</a>
+          <span class="footer__meta">Android · 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> Ikibiki Labs. All rights reserved.</span>
+      <span class="footer__made"><i></i>Made with care, and a very good cat.</span>
+      <a class="footer__to-top" href="#top">Back to top
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V6M5 13l7-7 7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="footer__studio" aria-hidden="true">
+      <img src="assets/img/logo-ikibiki-labs.png" alt="" />
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

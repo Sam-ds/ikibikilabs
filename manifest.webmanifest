@@ -1,0 +1,22 @@
+{
+  "name": "Helpful Pets — Ikibiki Labs",
+  "short_name": "Helpful Pets",
+  "description": "A digital wellness companion that turns screen-time goals into a living pet.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171331",
+  "theme_color": "#171331",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
