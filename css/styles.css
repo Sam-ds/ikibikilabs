@@ -310,6 +310,22 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
   letter-spacing: 0.08em;
   color: var(--ink-faint);
 }
+.preloader__powered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+  opacity: 0.78;
+}
+.preloader__powered span {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.preloader__powered img { height: 17px; width: auto; }
 
 .scroll-progress {
   position: fixed;
@@ -1046,101 +1062,6 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
 }
 
 /* ============================================================
-   THE IDEA
-   ============================================================ */
-.idea {
-  display: grid;
-  grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
-  gap: clamp(40px, 6vw, 76px);
-  align-items: start;
-}
-.idea__intro h2 {
-  margin: 18px 0 20px;
-  font-size: clamp(2rem, 3.6vw, 3rem);
-}
-.idea__lede {
-  max-width: 470px;
-  color: var(--ink-soft);
-  font-size: 0.96rem;
-  line-height: 1.75;
-}
-
-.mood-card {
-  position: relative;
-  max-width: 420px;
-  margin-top: 34px;
-  border-radius: 24px;
-  overflow: hidden;
-  border: 1px solid var(--line-2);
-  background: var(--surface);
-  box-shadow: 0 30px 70px -38px rgba(0, 0, 0, 0.9);
-  transform: rotate(-2deg);
-  transition: transform 0.7s var(--ease), border-color 0.4s ease;
-}
-.mood-card:hover { transform: rotate(0deg) translateY(-4px); border-color: rgba(155, 123, 255, 0.4); }
-.mood-card img { width: 100%; height: auto; aspect-ratio: 1.08; object-fit: cover; }
-.mood-card__caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding: 40px 20px 16px;
-  background: linear-gradient(transparent, rgba(15, 11, 36, 0.86));
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--ink);
-}
-
-.principle-list { display: flex; flex-direction: column; gap: 12px; }
-.principle {
-  display: grid;
-  grid-template-columns: 28px minmax(0, 1fr) 40px;
-  gap: 16px;
-  align-items: start;
-  padding: 20px 22px;
-  border: 1px solid var(--line-2);
-  border-radius: 19px;
-  background: rgba(33, 26, 64, 0.42);
-  transition: border-color 0.35s ease, background-color 0.35s ease, transform 0.4s var(--ease);
-}
-.principle:hover {
-  border-color: rgba(155, 123, 255, 0.4);
-  background: rgba(42, 35, 80, 0.55);
-  transform: translateX(4px);
-}
-.principle__num {
-  padding-top: 3px;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  color: var(--ink-faint);
-}
-.principle h3 { margin-bottom: 6px; font-size: 1.12rem; }
-.principle p { color: var(--ink-faint); font-size: 0.88rem; line-height: 1.65; }
-.principle__icon {
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: rgba(155, 123, 255, 0.12);
-  border: 1px solid rgba(155, 123, 255, 0.16);
-  color: var(--primary-soft);
-}
-.principle__icon svg {
-  width: 19px;
-  height: 19px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* ============================================================
    LIVE APP SCREENS
    ============================================================ */
 .section--app {
@@ -1165,7 +1086,7 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
 .screens-scroll::-webkit-scrollbar { display: none; }
 .screens-scroll.is-dragging { cursor: grabbing; }
 
-@media (min-width: 981px) {
+@media (min-width: 1200px) {
   .screens-scroll { justify-content: center; }
   .screens-hint { display: none; }
   .screens-foot { justify-content: flex-end; }
@@ -1699,8 +1620,6 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
   .phone { width: min(330px, 58vw); }
   .hero__strip { margin-top: 40px; }
 
-  .idea { grid-template-columns: 1fr; gap: 44px; }
-  .mood-card { max-width: 460px; }
 
   .progress-panel { grid-template-columns: 1fr; gap: 38px; }
   .progress-panel__intro > p { max-width: 560px; }
@@ -1766,10 +1685,6 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
   .strip-item:first-child { border-top: 0; }
   .strip-item__icon { width: 36px; height: 36px; }
 
-  .idea { gap: 38px; }
-  .mood-card { margin-top: 26px; }
-  .principle { grid-template-columns: 24px minmax(0, 1fr); padding: 18px; }
-  .principle__icon { display: none; }
 
   .screen-card { flex-basis: 248px; }
   .screen-card__frame { border-radius: 27px; padding: 6px; }
