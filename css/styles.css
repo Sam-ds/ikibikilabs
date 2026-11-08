@@ -1662,11 +1662,11 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
 .footer__studio {
   display: flex;
   justify-content: center;
-  margin-top: 22px;
-  opacity: 0.11;
+  margin-top: 16px;
+  opacity: 0.085;
   pointer-events: none;
 }
-.footer__studio img { width: min(78%, 700px); height: auto; }
+.footer__studio img { width: min(42%, 420px); height: auto; }
 
 /* ============================================================
    REVEAL
@@ -1818,7 +1818,7 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
   .footer__cols { flex-wrap: wrap; gap: 30px; }
   .footer__bottom { gap: 10px; }
   .footer__to-top { margin-left: 0; }
-  .footer__studio img { width: 86%; }
+  .footer__studio img { width: min(64%, 280px); }
 }
 
 @media (max-width: 480px) {
