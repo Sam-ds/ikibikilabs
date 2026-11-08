@@ -1139,11 +1139,6 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.principle--mint .principle__icon {
-  background: rgba(111, 227, 189, 0.1);
-  border-color: rgba(111, 227, 189, 0.2);
-  color: var(--mint);
-}
 
 /* ============================================================
    LIVE APP SCREENS
@@ -1169,6 +1164,12 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
 }
 .screens-scroll::-webkit-scrollbar { display: none; }
 .screens-scroll.is-dragging { cursor: grabbing; }
+
+@media (min-width: 981px) {
+  .screens-scroll { justify-content: center; }
+  .screens-hint { display: none; }
+  .screens-foot { justify-content: flex-end; }
+}
 .screen-card {
   flex: 0 0 272px;
   scroll-snap-align: start;
@@ -1632,14 +1633,6 @@ h3 { font-size: 1.22rem; letter-spacing: -0.02em; }
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--ink-faint);
-}
-.footer__made { display: inline-flex; align-items: center; gap: 7px; }
-.footer__made i {
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--mint);
-  box-shadow: 0 0 8px rgba(111, 227, 189, 0.85);
 }
 .footer__to-top {
   display: inline-flex;

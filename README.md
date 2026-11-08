@@ -14,7 +14,7 @@ nap-mode art, the roadmap, and the working pet carousel.
 - Hero with the real Helpful Pets home screen in a phone frame
 - A prominent **Build in progress** panel (core app → beta → device testing → Play Store)
 - “The idea” — the design principles behind the app
-- **The live app** — real captures of Home, Focus, Insights, Habits
+- **The live app** — real captures of Home, Insights, Habits
 - **Care, built in** — Pet voice, Reminders, and Hydration screens
 - **Nap mode** — the four buddies resting between sessions
 - **Choose your buddy** — scrollable, drag/arrow/snap carousel
