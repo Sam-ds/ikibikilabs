@@ -1,4 +1,4 @@
-# Helpful Pets — Ikibiki Labs
+# Helpful Pets | Ikibiki Labs
 
 The public home for **Helpful Pets**, a digital wellness companion by Ikibiki Labs.
 It is a **build-in-progress** page: real Android screens, the four buddies, the
@@ -13,13 +13,13 @@ nap-mode art, the roadmap, and the working pet carousel.
 
 - Hero with the real Helpful Pets home screen in a phone frame
 - A prominent **Build in progress** panel (core app → beta → device testing → Play Store)
-- “The idea” — the design principles behind the app
-- **The live app** — real captures of Home, Focus, Insights, Habits
-- **Care, built in** — Pet voice, Reminders, and Hydration screens
-- **Nap mode** — the four buddies resting between sessions
-- **Choose your buddy** — scrollable, drag/arrow/snap carousel
-- **Where we're at** — an honest build timeline
+- **The live app**: real captures of Home, Focus, Insights, Habits
+- **Care, built in**: Pet voice, Reminders, and Hydration screens
+- **Nap mode**: the four buddies resting between sessions
+- **Choose your buddy**: scrollable, drag/arrow/snap carousel
+- **Where we're at**: an honest build timeline
 - Custom 404, social card, PWA manifest, paw favicon
+- A public **Privacy Policy** page for Google Play
 
 There is intentionally **no email capture or waitlist form** on this build.
 
@@ -45,6 +45,8 @@ Open <http://127.0.0.1:4173/>.
 ├─ assets/
 │  ├─ img/                 # real app screenshots, pet art, logos, nap art
 │  └─ fonts/               # Nunito 400/600/700/800 (same as the app)
+├─ privacy-policy.html     # public privacy policy page
+├─ css/legal.css           # privacy page styles
 ├─ 404.html                # “this page wandered off”
 ├─ favicon.svg             # paw icon
 ├─ apple-touch-icon.png
@@ -65,7 +67,7 @@ build, so the site reflects the real product rather than mockups.
 
 1. Push this folder to a repository (for example `ikibiki-labs/helpful-pets`).
 2. **Settings → Pages** → deploy from `main` / `(root)`.
-3. Set the custom domain to `ikibikilabs.space` — the committed `CNAME` keeps it.
+3. Set the custom domain to `ikibikilabs.space`. The committed `CNAME` keeps it.
 4. Point DNS at GitHub Pages:
 
 | Type | Name | Value |
@@ -91,7 +93,7 @@ The “build in progress” content is intentionally manual:
 - **Hero status** → `.build-status` in `index.html` (bar width lives in
   `css/styles.css` under `.build-bar span`, animated by `js/main.js`).
 - **Roadmap** → `.timeline` in `index.html`.
-- **Date** → search for `8 Nov 2026`.
+- **Date** → search for `9 Nov 2026`.
 - **Screens** → replace files in `assets/img/` (keep the same filenames).
 
 When the Play Store build is live, change “Android beta · in testing” to
@@ -119,3 +121,13 @@ When the Play Store build is live, change “Android beta · in testing” to
 - The supplied promo key art with the pets on the couch is not on disk; the hero
   currently uses the live Home screen with floating reward cards.
 - No analytics, no storage, no email collection.
+
+---
+
+## Privacy policy
+
+The public policy for Google Play and for users is at:
+
+**https://ikibikilabs.space/privacy-policy.html**
+
+It is a separate static page, uses the same theme, and is linked from the site footer and the 404 page. The effective date is 9 November 2026, policy version 2026-11-09.1.
